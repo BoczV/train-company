@@ -35,6 +35,7 @@ public abstract class TrainsWithPassengers extends Train {
         int randomNumber = Util.randomNumberFromGivenRange(1, 102);
         if(randomNumber <= chanceOfPunishment){
             return (int)(monthlyNumberOfPassengers * ratioOfPunishedPass) * amountOfPunishment;
+            
         }
         return 0;
     }
